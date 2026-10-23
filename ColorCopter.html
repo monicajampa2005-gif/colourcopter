@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Source brief: :contentReference[oaicite:0]{index=0} -->
@@ -1937,13 +1937,22 @@
               <h3 style="font-size:36px;letter-spacing:-.055em;line-height:1.08;margin-bottom:14px;">Map. Apply. Verify.</h3>
               <p style="color:var(--muted);line-height:1.7;">Every project moves through a smarter aerial workflow where surface zones, height risks and application paths are planned before execution.</p>
 
-              <div class="command-screen">
-                <div class="route-line"></div>
-                <div class="route-dot"></div>
-                <div class="telemetry">
-                  <div>Coverage 98%</div>
-                  <div>Height Safe</div>
-                  <div>Route Active</div>
+              <div class="command-screen" style="display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:24px;overflow:hidden;">
+                <!-- Drone centered with animated dot -->
+                <div style="flex:1;display:flex;align-items:center;justify-content:center;position:relative;width:100%;">
+                  <img src="drone.png" alt="Drone" style="height:190px;width:auto;object-fit:contain;z-index:2;filter:drop-shadow(0 0 28px rgba(47,107,255,.65));" />
+                  <div style="width:14px;height:14px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 10px rgba(47,107,255,.18);position:absolute;animation:route 8s linear infinite;z-index:3;"></div>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;">
+                  <div style="padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);color:white;font-size:12px;font-weight:800;display:flex;align-items:center;gap:8px;">
+                    <span style="width:9px;height:9px;border-radius:50%;background:#22c55e;flex-shrink:0;box-shadow:0 0 6px #22c55e;display:inline-block;"></span>Coverage 98%
+                  </div>
+                  <div style="padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);color:white;font-size:12px;font-weight:800;display:flex;align-items:center;gap:8px;">
+                    <span style="width:9px;height:9px;border-radius:50%;background:#7ea2ff;flex-shrink:0;box-shadow:0 0 6px #7ea2ff;display:inline-block;"></span>Height Safe
+                  </div>
+                  <div style="padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);color:white;font-size:12px;font-weight:800;display:flex;align-items:center;gap:8px;">
+                    <span style="width:9px;height:9px;border-radius:50%;background:var(--blue);flex-shrink:0;box-shadow:0 0 6px var(--blue);display:inline-block;"></span>Route Active
+                  </div>
                 </div>
               </div>
             </div>
@@ -1989,7 +1998,7 @@
         </div>
       </div>
     </section>
-
+    
     <section class="section section-dark" id="technology">
       <div class="container">
         <div class="section-head center reveal">
